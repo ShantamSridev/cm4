@@ -1,14 +1,15 @@
 # Test for i2c communications with a Raspberry Pi Pico
-import smbus
+import smbus2
 from time import sleep
 
 # I2C channel 1 is connected to the GPIO pins
 channel = 1
+
 # Address of the peripheral device
 address = 0x3E
 
 # Initialize I2C (SMBus)
-bus = smbus.SMBus(channel)
+bus = smbus2.SMBus(channel)
 
 i=1000
 while 1:
